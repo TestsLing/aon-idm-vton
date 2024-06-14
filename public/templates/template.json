@@ -1,0 +1,27 @@
+[
+    {
+        "id": "1",
+        "image": "template1.png",
+        "prompt": "cute pink top."
+    },
+    {
+        "id": "2",
+        "image": "template2.png",
+        "prompt": "cute white top."
+    },
+    {
+        "id": "3",
+        "image": "template3.png",
+        "prompt": "cute black top."
+    },
+    {
+        "id": "4",
+        "image": "template4.png",
+        "prompt": "elegant."
+    },
+    {
+        "id": "5",
+        "image": "template5.png",
+        "prompt": "Royal style."
+    }
+]
