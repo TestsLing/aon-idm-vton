@@ -6,8 +6,8 @@
 		<div class="container">
 			<div class="banner">
 				<img src="../assets/images/banner.png" mode=""></img>
-				<p>AON IDM-VTON</p>
-				<p>一键换婚纱</p>
+				<p>{{ appData.title }}</p>
+				<p>{{ appData.subtitle }}</p>
 			</div>
 			<div class="uni-form-item uni-column">
 				<div class="title">上传图片</div>
@@ -83,7 +83,6 @@ import Header from '../components/Header.vue';
 import Loading from '../components/Loading.vue';
 
 const router = useRouter()
-
 const showLoading = ref(false);
 const showError = ref(false);
 const swapImgUrl = ref('');
@@ -92,8 +91,10 @@ const submitImgUrl = ref('');
 const prompt = ref('');
 const templateList = ref([]);
 const templateId = ref(1);
-
 const maxSize = 30 * 1024 * 1024;
+
+const appData = process.env?.appData || {}
+
 function goToComplete(url) {
 	const query = { url: url }
 	router.push({
