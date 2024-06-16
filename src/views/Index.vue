@@ -116,7 +116,8 @@ function afterRead(file) {
 		if (res.code == 200 && res.data && res.data.length) {
 			submitImgUrl.value = res.data
 		}
-
+		console.log("push download iamge page", res.data)
+		goToComplete(res.data)
 	}).catch(err => {
 		showToast('image upload failed');
 		console.log(err);
